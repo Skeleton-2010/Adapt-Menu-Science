@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+.Header{
+    height: 100vh;
+    background-image: url(./Images/pexels-faik-akmd-1025469.jpg);
+    background-position: bottom;
+}
+.Menu-Top{
+    background-color: #ffaaa0;
+    height: 24vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:8px solid #ffcca0;
+}
+.Name-Logo{
+    font-size: 16px;
+    width: 128px;
+    font-weight: 500;
+}
+
+.Menu-Logo-Container{
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 400px){
+    .Menu-Logo-Container{
+        flex-direction: column;
+    }
+}
+
+.Page-Links{
+    height: 88vh;
+    background-color: #000000;
+    border-top: 8px solid #ffffaa;
+}
+.Links-Wrapper{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Button{
+    display: block;
+    height: 64px;
+    width: 256px;
+    color: #000000;
+    line-height: 64px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #a0aaff;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.Button:hover{
+    color: #a0aaff;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    height: 80px;
+    line-height: 80px;
+}
